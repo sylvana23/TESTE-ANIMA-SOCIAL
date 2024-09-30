@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Central</title>
+    <link rel="stylesheet" href="../../src/css/style-tela-1.css">
+    <script src="../../src/js/script-tela-1.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+      
+        <div class="logo">Ânima Social</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul>
+            <li><a href="/pages/paginas-internas/tela-1.html">Página Central</a></li>
+            <li><a href="/pages/configuracoes/config-menu.html">Configurações</a></li>
+            <li><a href="/pages/explorar/explorar.html">Explorar</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Chat</a></li>
+        </ul>
+    </div>
+
+    <!-- Menu lateral -->
+    <div class="sidebar" id="sidebar">
+        <ul>                 
+            <li><a href="/pages/paginas-internas/tela-1.html">Página Central</a></li>
+            <li><a href="/pages/configuracoes/config-menu.html">Configurações</a></li>
+            <li><a href="/pages/explorar/explorar.html">Explorar</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Chat</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="container">
+       
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/80" alt="Maysa Mendez">
+            <div class="profile-info">
+                <h2>Maysa Mendez</h2>
+                <p>IBMR Barra</p>
+                <p>Design Gráfico</p>
+                <p>4º período</p>
+            </div>
+        </div>
+
+       
+        <a href="/pages/itens/cadastro-itens.html" class="link-card"> 
+        <div class="item-card" data-color="green">
+          <span>MEUS ITENS</span>
+            <span class="item-count">7 Itens</span>
+         </div>
+        </a>  
+
+        <a href="#" class="link-card">  
+        <div class="item-card" data-color="orange">
+            <span>DOAÇÕES</span>
+            <span class="item-count">10 Itens</span>
+        </div>
+      </a>  
+
+
+      <a href="#" class="link-card"> 
+        <div class="item-card" data-color="blue">
+            <span>CHAT</span>
+            <span class="item-count">4 Itens</span>
+        </div>
+      </a>  
+    </div>
+
+</body>
+</html>
