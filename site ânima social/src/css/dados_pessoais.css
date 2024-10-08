@@ -43,7 +43,7 @@ body {
 }
 
 .info-section input {
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 35px;
     padding: 13px 13px;
     margin-top: 5px;

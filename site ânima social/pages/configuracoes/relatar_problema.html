@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatar Problema</title>
+    
+    <link rel="stylesheet" href="../../src/css/relatar_problema.css">
+    <!-- Inclui a biblioteca EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Relatar Problema</h2>
+        <p>Se você encontrou algum problema, descreva-o no campo abaixo. Sua opinião é importante para nós!</p>
+        <!-- Formulário para relatar problema -->
+        <form id="reportForm">
+            <label for="userName">Seu Nome:</label>
+            <input type="text" id="userName" name="user_name" placeholder="Digite seu nome" required>
+
+            <label for="userEmail">Seu E-mail:</label>
+            <input type="email" id="userEmail" name="user_email" placeholder="Digite seu e-mail" required>
+
+            <label for="userMessage">Comentário:</label>
+            <textarea id="userMessage" name="message" placeholder="Descreva o problema aqui..." rows="5" required></textarea>
+
+            <button type="submit">Enviar Relatório</button>
+        </form>
+
+        <!-- Mensagem de sucesso ou erro -->
+        <div id="statusMessage"></div>
+    </div>
+
+    <!-- Script para configurar e enviar o e-mail com EmailJS -->
+    <script src="../../src/js/relatar_prolema.js"></script>
+</body>
+</html>

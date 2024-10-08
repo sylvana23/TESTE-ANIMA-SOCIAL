@@ -1,0 +1,63 @@
+/* Definições básicas */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilização dos cards */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Títulos dos cards */
+.card h3 {
+    color: #4caf50;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Parágrafos dos cards */
+.card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Animações ao passar o mouse nos cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
