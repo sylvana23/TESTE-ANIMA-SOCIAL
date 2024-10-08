@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta</title>
+    <link rel="stylesheet" href="../../src/css/minha_conta.css">
+</head>
+<body>
+    <div class="container">
+      
+            <h1>MINHA CONTA</h1>
+    
+        
+        <div class="profile-section">
+            <img src="https://via.placeholder.com/150" alt="Foto de Perfil" class="profile-pic">
+            <p>EDITAR FOTO DE PERFIL</p>
+        </div>
+
+        <form class="info-section">
+            <label for="nome">NOME</label>
+            <input type="text" id="nome" value="Maysa Mendez" readonly>
+
+            <label for="universidade">UNIVERSIDADE</label>
+            <input type="text" id="universidade" value="IBMR - Barra da Tijuca" readonly>
+
+            <label for="curso">CURSO</label>
+            <input type="text" id="curso" value="Design Gráfico" readonly>
+
+            <label for="periodo">PERÍODO</label>
+            <input type="text" id="periodo" value="4º Período" readonly>
+        </form>
+        <!-- Botão de Editar e Salvar -->
+        <button id="edit-btn">Editar Informações</button>
+    </div>
+    <script src="../../src/js/dados_pessoais.js"></script>   
+</body>
+</html>
