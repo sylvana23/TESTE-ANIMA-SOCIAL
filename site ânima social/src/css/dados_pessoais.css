@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "League Spartan", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 90px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+ h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.info-section input {
+    border: 2px solid #000;
+    border-radius: 35px;
+    padding: 13px 13px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.info-section input:focus {
+    border-color: #555;
+    outline: none;
+}
+
+button {
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#edit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#edit-btn.editing {
+    background-color: #28a745;
+}
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 50px;
+        margin-top: 200px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .info-section input {
+        font-size: 14px;
+        padding: 13px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
+
