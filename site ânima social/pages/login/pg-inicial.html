@@ -5,16 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ânima Social</title>
     <link rel="stylesheet" href="../../src/css/style-page-inicial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="../../src/assets/img/logo.png" alt="Logo Ânima Social">
+    <header class="header">
+        <div class="logo"><img src="../../src/assets/img/icon_logo.png" alt=""></div>
+        <div class="search-bar">
+            <input type="text" class="input-lupa" placeholder="Buscar itens">
         </div>
-        <div class="buttons">
-            <a href="../../../site ânima social/pages/login/login.html" class="button">ENTRAR</a>
-            <a href="../../../site ânima social/pages/cadastro/cadastrar.html" class="button">CADASTRAR</a>
+        <div class="profile-icon"> <img src="../../src/assets/img/icon_perfil.png" alt=""></div>
+    </header>
+
+    <div class="hero-section">
+        <div class="content">
+            <h1>TROCAR GERA APRENDIZADO</h1>
+            <p>Faça novas amizades enquanto explora <br> conteúdos para o seu curso</p>
+            <a href="../explorar/explorar.html">
+            <button class="explore-button">EXPLORAR</button>
+             </a>
         </div>
     </div>
+
+    <section class="topics">
+        <div class="container">
+            <h2>Navegue por tópicos</h2>
+            <div class="topic-grid">
+                <div class="topic-item-blue">
+                    <a href="../itens/meus-itens.html">
+                    <img src="../../src/assets/img/itens_saude.png" alt="Itens de Saúde">
+                    <p> Itens de saúde</p>
+                    </a>
+                </div>
+                <div class="topic-item-orange">
+                    <a href="../itens/meus-itens.html">
+                    <img src="../../src/assets/img/itens_arte.png" alt="Itens de Arte">
+                    <p> Itens de Arte</p>
+                    </a>
+                </div>
+                <div class="topic-item-green">
+                    <a href="../itens/meus-itens.html" class="livros">
+                    <img src="../../src/assets/img/itens_livros.png" alt="Livros Diversos">
+                    <p> Livros Diversos</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>O que nossos usuários dizem?</h2>         
+        
+           <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>Muito massa esse site do Ânima Social! Achei uns materiais de desenho que tava precisando. Super útil e confiável. Com certeza já virou meu favorito!</p>
+                    <img src="../../src/assets/img/foto_usuario1.png" alt="Foto do usuário">
+                    <h3>Gustavo Moraes</h3>
+                    <span>Design</span>
+        
+                </div>
+                <div class="testimonial-item">
+                    <p>Muito prático e útil! Achei uns livros de programação que estava procurando há tempos e consegui doar uns equipamentos que já não usava. Tudo seguro e fácil de navegar. Super indico!</p>
+                    <img src="../../src/assets/img/foto_usuario2.png" alt="Foto do usuário">
+                    <h3>Marcio Augusto</h3>
+                    <span>Tecnologia da Informação - T.I</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>Adorei o site! Peguei livros e materiais para as aulas práticas que estavam fora do meu orçamento e ainda doei alguns itens. Tudo super seguro e fácil de usar. Recomendo demais!!</p>
+                    <img src="../../src/assets/img/foto_usuario3.png" alt="Foto do usuário">
+                     <h3>Gabriela Santos</h3>
+                      <span>Medicina Veterinária</span>
+                </div>
+            </div> 
+
+            <div class="testimonial-buttons">
+    
+                <a href="https://www.youtube.com/?hl=pt&gl=BR" class="explore-button-blue">Ver mais avaliações</a>
+                <a href="https://www.youtube.com/?hl=pt&gl=BR" class="explore-button-green">Faça sua avaliação!</a>
+            </div>
+        </div>
+    </section>
+<section class="container_box-app">
+    <div class="container-apps">
+        <div class="content">
+            <h1>BAIXE NOSSO APP!</h1>
+            <p>Lá você tem mais liberdade para acessar de <br> onde quiser e quando precisar! Não perca essa <br> oportunidade para fazer trocas de materiais <br> e novas amizades!</p>
+            <div class="store-links">
+                <a href="#" class="store-button">
+                    <img src="../../src/assets/img/googleplay.png" alt="Disponível no Google Play">
+                </a>
+                <a href="#" class="store-button-1">
+                    <img src="../../src/assets/img/apple.png" alt="Disponível na App Store">
+                </a>
+                <a href="#" class="qr-code">
+                    <img src="../../src/assets/img/qrcode.png" alt="QR code para baixar o app" class="qr-code">
+                </a>
+            </div>
+        </div>
+        <div class="image-section">
+            
+            <img src="../../src/assets/img/celulares.png" alt="App mockup Ânima Social" class="app-mockup">
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="footer-menu">
+            <ul>
+                <li><a href="../login/pg-inicial.html">PÁGINA INICIAL</a></li>
+                <li><a href="#">DIVULGAR</a></li>
+                <li><a href="../itens/meus-itens.html">ITENS</a></li>
+                <li><a href="../configuracoes/dicas.html">SOBRE O PROJETO</a></li>
+                <li><a href="../configuracoes/ajuda.html">FALE CONOSCO</a> <p>contato@animasocial.com<br> <br>@_animasocial</p></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <img src="../../src/assets/img/icon_logo.png" alt="Ânima Social logo" class="footer-logo">
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/_animasocial?igsh=aWQzeTFsemw2dGhq"><img src="../../src/assets/img/icon_instagram.png" alt="Instagram Icon"></a>
+                <a href="https://www.linkedin.com/company/%C3%A2nima-social/"><img src="../../src/assets/img/icon_linkedin.png" alt="LinkedIn Icon"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p><a href="../../pages/configuracoes/termos_de_uso.html">Termos de Uso</a> | <a href="../../pages/configuracoes/termos_de_uso.html">Política de Privacidade</a></p>
+        <p>&copy; 2024 Ânima Social. Todos os direitos reservados.</p>
+    </div>
+</footer>
 </body>
 </html>
