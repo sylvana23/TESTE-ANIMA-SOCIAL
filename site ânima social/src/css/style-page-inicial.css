@@ -8,6 +8,7 @@
 }
 
 body {
+    
     font-family:  "League Spartan", sans-serif;
     color: #333;
     background-color: #f7f7f7;
@@ -72,7 +73,6 @@ a{
 }
 
 
-/* Seção estudantes */
 .hero-section {
     width: 90%;
     height: 100vh;
@@ -106,6 +106,7 @@ a{
 .hero-section p {
     font-size: 20px;
     line-height: 25px;
+    margin-left: -2px;
 
 }
 
@@ -219,100 +220,87 @@ a{
     height: 384px;
     padding: 60px 0;
     background: #ffbd59;
-    display: flex;
+
     
 } 
 
 .testimonials h2 {
     text-align: center;
     margin-bottom: 40px;
+    font-size: 35px;
 }
 
 
-.container-2{
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start; 
-    width: 80%; 
-    flex-wrap: wrap; 
-  }
-  
-  .card {
-    background-color: white;
-    border-radius: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-left: -50px;
-    width: 355px;
-    height: 406px;
+.container_card{
+    display: flex;
+    margin-left: 110px;
+    margin-top: -160px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-right: 25px;
+    width: 380px;
+    height: 250px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.20);
+    transition: 0.3s;
+}
+.card:hover{
+    height: 370px;
+}
+.card .img_box{
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 0px;
+    transition: 0.3s;
+}
+.card:hover .img_box{
+    top: -80px;
+    scale: 0.85;
+}
+.card .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 30px;
+
+}
+.content_card h3{
+    color:#4caf50;
+}
+.content_card p{
+    font-size: 20px;
+    text-align: center;
+    margin-right: 40px;
+}
+.card .content_card{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    padding: 0px 20px;
     text-align: center;
-
-  }
+    height: 48px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.card:hover .content_card{
+    top: 130px;
+    height: 250px;
+}
   
-  .card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-  }
-  
-  .card h3 {
-    margin-top: 10px;
-    color: #4caf50;
-  }
-  
-  .card span {
-    color: gray;
-    font-style: italic;
-    margin-top: 5px;
-  }
 
-.testimonial-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
 
-.testimonial-item {
-    width: 365px;
-    height: 410px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 45px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    font-size: 20px;
-    color: #343434;
-    font-weight: lighter;
-    
-}
-.testimonial-item img{
-    width: 149px;
-    height: 149px;
-    margin-left: 60px;
-    margin-top: -18px;
-} 
-
-h3{
-    font-weight: 600;
-    margin-top: 20px;
-    margin-left: 60px;
-    color: #3E8038;
-}
-
-.testimonial-item span{
-    color:#343434;
-    font-weight: lighter;
-    font-size: 16px;
-    text-align: center;
-}
 .testimonial-buttons {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 90px;
 }
 
 
@@ -478,6 +466,7 @@ footer {
 
 .footer-menu  p{
     margin-top: 7px;
+    margin-left: -2px;
     font-size: 15px;
     color: #727272;
 }
@@ -526,11 +515,52 @@ footer {
     color: #27ae60;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
-    .hero {
+    .header {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
     }
 
+    .search-bar input {
+        width: 100%;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-section .content {
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .explore-button {
+        width: 100%;
+    }
+
+    .footer-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
