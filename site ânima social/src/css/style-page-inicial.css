@@ -233,7 +233,7 @@ a{
 
 .container_card{
     display: flex;
-    margin-left: 110px;
+    justify-content: center;
     margin-top: -160px;
 }
 .card{
